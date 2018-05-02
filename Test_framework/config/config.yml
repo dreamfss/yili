@@ -38,6 +38,12 @@ label: //*[@id="topbar"]/div/div[2]/div[2]/div/ul/li
 #我的富连网标签
 tagName: a
 
+#登录失败，页面提示信息
+Information: message-content
+
+#提示信息文章
+Information_text: 用户名或密码错误
+
 #返回首页
 home: //*[@id="header"]/div/div[2]/div[1]/a[2]
 

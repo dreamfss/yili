@@ -40,7 +40,7 @@ class Test_Order(unittest.TestCase):
             self.driver.get_screenshot_as_file(
                 "D:\\TestCase\\Hypweb.Frame\\Test_framework\\log\\log%s.png" % nowTime)  # 截屏图片
             logger.warnning('登录失败')  # 登录失败日志
-            logger.error('页面元素未找到')
+            logger.error('页面元素未找到')#登录失败日志
             self.sub_tearDown()  # 调用退出方法
 
 
