@@ -1,0 +1,57 @@
+URL: http://bbc.wanxiaohong.cn/
+
+log:
+    file_name: test.log
+    backup: 5
+    console_level: WARNING
+    file_level: DEBUG
+    pattern: '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+
+#登录按钮
+loginxpath: //*[@id="login_50"]/a[2]
+
+#登录手机号
+phone: /html/body/div[2]/div/div[2]/form/div[3]/ul/li[1]/span/input
+
+#登录密码
+password: /html/body/div[2]/div/div[2]/form/div[3]/ul/li[2]/span/input
+
+#d登录页登录按钮
+login_button: /html/body/div[2]/div/div[2]/form/div[3]/ul/li[4]/button/span/span
+
+#用户名
+Username: uname_50
+#//*[@id="uname_67"]
+
+#用回名
+links: kong
+
+#退出按钮
+quit: //*[@id="member_50"]/a
+
+#我的富连网
+membership: //*[@id="topbar"]/div/div[2]/div[2]/a
+
+#列表
+label: //*[@id="topbar"]/div/div[2]/div[2]/div/ul/li
+
+#我的富连网标签
+tagName: a
+
+#返回首页
+home: //*[@id="header"]/div/div[2]/div[1]/a[2]
+
+#选中元素
+active: active
+
+#会员中心
+member_centre: //*[@id="topbar"]/div/div[2]/div/a[1]
+
+#提示信息
+prompt: //*[@id="main"]/div/div[2]/div[2]/div[1]/div[1]/div[1]
+
+#搜索栏
+search: //*[@id="search-key-word"]
+
+#搜索商品
+search_goods: 亚瑟王
