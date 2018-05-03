@@ -19,8 +19,7 @@ class Test_Login(unittest.TestCase):
     password = (By.XPATH, Config().get('password'))  # 密码输入框
     login_button = (By.XPATH, Config().get('login_button'))  # 登录页（已登录），登录按钮
     quit_button = (By.XPATH, Config().get('quit'))  # 首页，退出按钮
-    Information = (By.CLASS_NAME, Config().get('alert'))  #登录失败，页面提示信息
-    Information_test = Config().get('Information_test')  #登录失败，页面提示文字信息
+    Information = (By.XPATH, Config().get('Information'))  #登录失败，页面提示信息
 
     def sub_setUp(self):
         # 调用登录模块中driver
@@ -28,6 +27,7 @@ class Test_Login(unittest.TestCase):
 
     def sub_tearDown(self):
         # 关闭游览器、命令框
+        self.driver.close()
         self.driver.quit()
 
     def test_search(self):
@@ -44,30 +44,16 @@ class Test_Login(unittest.TestCase):
                 self.driver.find_element(*self.password).send_keys(d['password'])  # 输入密码（读取表格）
                 self.driver.find_element(*self.login_button).click()  # 登录页，点击登录按钮
                 print(2)
-                WebDriverWait(self.driver, 10).until(lambda x: x.find_element(*self.Information))
-                is_disappeared = WebDriverWait(self.driver, 30, 1, (ElementNotVisibleException)).
-                    until_not(lambda x: x.x.find_element(*self.Information).is_displayed())
-                print(is_disappeared)
-                time.sleep(1)
-                Information = self.driver.browser.switch_to_alert().text()
-                print(Information)
-                if Information == Test_Login.Information_test:
-                    logger.info('登录页成功')
-                    print(1)
-                else:
-                    links = self.driver.find_element(*self.Username).text  # 通过ID，获得用户名
-                    if links == Config().get('links'):  # 验证获得的用户名与配置文件中是否一致
-                        self.driver.find_element(*self.quit_button).click()  # 首页（已登录），退出按钮
-                        logger.info('登录成功')  # 登录成功日志
-                        self.sub_tearDown()  # 调用退出方法
-                    # time.sleep(2)
-                    # driver.switch_to_alert().accept()  # 点击弹出里面的确定按钮
-                    # # driver.switch_to_alert().dismiss() # 点击弹出上面的X按钮
-            # links = self.driver.find_element(*self.Username).text  # 通过ID，获得用户名
-            # if links == Config().get('links'):  # 验证获得的用户名与配置文件中是否一致
-            #     self.driver.find_element(*self.quit_button).click()  # 首页（已登录），退出按钮
-            #     logger.info('登录成功')  # 登录成功日志
-            #     self.sub_tearDown()  # 调用退出方法
+                time.sleep(2)
+                WebDriverWait(self.driver, 10).until(lambda driver:
+                                                     self.driver.find_element(*self.Information))
+                is_disappeared = WebDriverWait(self.driver, 30, 1,).\
+                    until_not(lambda driver: self.driver.find_element(*self.Information).is_displayed())
+            links = self.driver.find_element(*self.Username).text  # 通过ID，获得用户名
+            if links == Config().get('links'):  # 验证获得的用户名与配置文件中是否一致
+                self.driver.find_element(*self.quit_button).click()  # 首页（已登录），退出按钮
+                logger.info('登录成功')  # 登录成功日志
+                self.sub_tearDown()  # 调用退出方法
         except Exception:
             # 代码执行错误时，打印图片
             nowTime = time.strftime("%Y.%m.%d.%H.%M.%S") + ".test_001_login"  # 图片名称格式
