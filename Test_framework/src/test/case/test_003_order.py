@@ -3,7 +3,7 @@ import unittest
 # from selenium import webdriver
 from selenium.webdriver.common.by import By
 from Test_framework.src.utils.config import Config, DRIVER_PATH, DATA_PATH
-from Test_framework.src.utils.login import login
+from Test_framework.src.utils.login import LoGin
 from Test_framework.src.utils.log import logger
 from Test_framework.src.utils.file_reader import ExcelReader
 
@@ -20,7 +20,7 @@ class Test_Order(unittest.TestCase):
 
     def sub_setUp(self):
         # 调用登录模块中driver
-        self.driver = login().driver
+        self.driver = LoGin().driver
 
     def sub_tearDown(self):
         # 关闭游览器、命令框

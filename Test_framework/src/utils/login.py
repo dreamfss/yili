@@ -8,7 +8,7 @@ from Test_framework.src.utils.config import Config, DRIVER_PATH, DATA_PATH
 from Test_framework.src.utils.file_reader import ExcelReader
 
 
-class login(object):
+class LoGin(object):
     URL = Config().get('URL')
     excel = DATA_PATH + '\TestLogin.xlsx'
     locator_button = (By.XPATH, Config().get('loginxpath'))
@@ -17,32 +17,18 @@ class login(object):
     password = (By.XPATH, Config().get('password'))
     login_button = (By.XPATH, Config().get('login_button'))
     quit = (By.XPATH, Config().get('quit'))
+    digital = Config().get('digital')
     driver = webdriver.Chrome(executable_path=DRIVER_PATH + '\chromedriver.exe')
     driver.maximize_window()
     driver.get(URL)
-
-    # def __init__(self):
-    #     self.driver = login.driver
-    #     # self.driver = webdriver.Chrome(executable_path=DRIVER_PATH + '\chromedriver.exe')
-    #     self.driver.maximize_window()
-    #     self.driver.get(self.URL)
-
-
-    # driver = ''
-    # def __init__(self):
-    #     self.driver = driver = webdriver.Chrome(executable_path=DRIVER_PATH + '\chromedriver.exe')
-    #     self.driver.maximize_window()
-    #     self.driver.get(self.URL)
-    #     return self.driver
 
     def test_search(self):
         datas = ExcelReader(self.excel).data
         self.driver.find_element(*self.locator_button).click()
         time.sleep(3)
         self.driver.find_element(*self.phone).clear()
-        self.driver.find_element(*self.phone).send_keys(datas[2]['username'])
+        self.driver.find_element(*self.phone).send_keys(datas[login.digital]['username'])
         self.driver.find_element(*self.password).clear()
-        self.driver.find_element(*self.password).send_keys(datas[2]['password'])
+        self.driver.find_element(*self.password).send_keys(datas[login.digital]['password'])
         time.sleep(2)
         self.driver.find_element(*self.login_button).click()
-        time.sleep(2)

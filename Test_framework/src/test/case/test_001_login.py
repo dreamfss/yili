@@ -3,7 +3,7 @@ import unittest
 # from selenium import webdriver
 from selenium.webdriver.common.by import By
 from Test_framework.src.utils.config import Config, DRIVER_PATH, DATA_PATH
-from Test_framework.src.utils.login import login
+from Test_framework.src.utils.login import LoGin
 from Test_framework.src.utils.log import logger
 from Test_framework.src.utils.file_reader import ExcelReader
 from selenium.webdriver.support.ui import WebDriverWait
@@ -23,7 +23,7 @@ class Test_Login(unittest.TestCase):
 
     def sub_setUp(self):
         # 调用登录模块中driver
-        self.driver = login().driver
+        self.driver = LoGin().driver
 
     def sub_tearDown(self):
         # 关闭游览器、命令框
@@ -45,10 +45,19 @@ class Test_Login(unittest.TestCase):
                 self.driver.find_element(*self.login_button).click()  # 登录页，点击登录按钮
                 print(2)
                 time.sleep(2)
+                print(len(d['username']))
+                print(len(d['password']))
+                print(d)
+                print(3.1)
+                time.sleep(1000)
+                #  意思就是在10秒内等待某个按钮被定位到。每隔0.5秒内调用一下until里面的表达式或者方法函数，
+                # 要么10秒内表达式执行成功，要么10秒后抛出超时异常
                 WebDriverWait(self.driver, 10).until(lambda driver:
                                                      self.driver.find_element(*self.Information))
+                #  判断元素是否消失，是返回Ture,否返回False
                 is_disappeared = WebDriverWait(self.driver, 30, 1,).\
                     until_not(lambda driver: self.driver.find_element(*self.Information).is_displayed())
+                print(is_disappeared)
             links = self.driver.find_element(*self.Username).text  # 通过ID，获得用户名
             if links == Config().get('links'):  # 验证获得的用户名与配置文件中是否一致
                 self.driver.find_element(*self.quit_button).click()  # 首页（已登录），退出按钮
