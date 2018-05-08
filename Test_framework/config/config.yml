@@ -16,11 +16,17 @@ phone: /html/body/div[2]/div/div[2]/form/div[3]/ul/li[1]/span/input
 #登录密码
 password: /html/body/div[2]/div/div[2]/form/div[3]/ul/li[2]/span/input
 
-#d登录页登录按钮
+#登录页登录按钮
 login_button: /html/body/div[2]/div/div[2]/form/div[3]/ul/li[4]/button/span/span
 
 #登录信息表格行数
-digital: 2
+digital: 4
+
+#请填写登录账号
+login_account: /html/body/div[2]/div/div[2]/form/div[3]/ul/li[1]/span[2]
+
+#请填写登录密码
+login_password: /html/body/div[2]/div/div[2]/form/div[3]/ul/li[2]/span[2]
 
 #用户名ID
 Username: uname_50

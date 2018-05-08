@@ -20,7 +20,6 @@ def rentest():
     for test_suite in suite:
         for test_case in test_suite:
             testunit.addTest(test_case)
-            # print(test_suite)
     return testunit
 alltestnames = rentest()
 
@@ -39,4 +38,3 @@ if __name__ == '__main__':
         logger.exception("%s" % msg)
         # test_suite.get_screenshot_as_file("D:\\TestCase\\Hypweb.Frame\\Test_framework\\log\\log%s.png" % nowTime)
         # 捕捉到了异常，但是又想重新引发它(传递异常)，可以使用不带参数的raise语句即可：
-        raise

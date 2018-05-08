@@ -4,7 +4,12 @@
     <list default="true" id="2e89f927-284c-43ef-87e5-df6ab1e67051" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test_framework/config/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Test_framework/config/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test_framework/data/TestLogin.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Test_framework/data/TestLogin.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_framework/log/test.log.2018-03-13" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_framework/log/test.log.2018-04-25" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_framework/log/test.log.2018-04-26" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_framework/log/test.log.2018-05-03" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_framework/report/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/Test_framework/report/report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_framework/runtest.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test_framework/runtest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test_framework/src/test/case/test_001_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test_framework/src/test/case/test_001_login.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test_framework/src/test/case/test_002_member.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test_framework/src/test/case/test_002_member.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test_framework/src/test/case/test_003_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test_framework/src/test/case/test_003_order.py" afterDir="false" />
@@ -21,14 +26,14 @@
     <SUITE FILE_PATH="coverage/Hypweb_Frame$log.coverage" NAME="log Coverage Results" MODIFIED="1519719753157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test_framework/src/utils" />
     <SUITE FILE_PATH="coverage/Hypweb_Frame$Unittests_for_test_login_TestBaiDu_test_search_0.coverage" NAME="Unittests for test_login.TestBaiDu.test_search_0 Coverage Results" MODIFIED="1519787109177" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test_framework/src/test/case" />
     <SUITE FILE_PATH="coverage/Hypweb_Frame$Unittests_for_test_001_login_TestBaiDu_test_search.coverage" NAME="Unittests for test_001_login.TestBaiDu.test_search Coverage Results" MODIFIED="1520585413698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test_framework/src/test/case" />
-    <SUITE FILE_PATH="coverage/Hypweb_Frame$Unittests_in_test_002_member_py.coverage" NAME="Unittests in test_002_member.py Coverage Results" MODIFIED="1524736447008" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test_framework/src/test/case" />
+    <SUITE FILE_PATH="coverage/Hypweb_Frame$Unittests_in_test_002_member_py.coverage" NAME="Unittests in test_002_member.py Coverage Results" MODIFIED="1525773558067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test_framework/src/test/case" />
     <SUITE FILE_PATH="coverage/Hypweb_Frame$config.coverage" NAME="config Coverage Results" MODIFIED="1520585214245" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test_framework/src/utils" />
     <SUITE FILE_PATH="coverage/Hypweb_Frame$Unittests_for_HTMLTestRunner_TestProgram_runTests.coverage" NAME="Unittests for HTMLTestRunner.TestProgram.runTests Coverage Results" MODIFIED="1519976330286" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test_framework/src/utils" />
     <SUITE FILE_PATH="coverage/Hypweb_Frame$file_reader__1_.coverage" NAME="file_reader (1) Coverage Results" MODIFIED="1519715407191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test_framework/src/utils" />
     <SUITE FILE_PATH="coverage/Hypweb_Frame$Test_LonGin.coverage" NAME="Test_LonGin Coverage Results" MODIFIED="1519637688334" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test_framework/src/test/case" />
     <SUITE FILE_PATH="coverage/Hypweb_Frame$Unittests_for_test_login_TestBaiDu_test_search.coverage" NAME="Unittests for test_login.TestBaiDu.test_search Coverage Results" MODIFIED="1519979544047" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test_framework/src/test/case" />
     <SUITE FILE_PATH="coverage/Hypweb_Frame$_001_CheckLogin.coverage" NAME="_001_CheckLogin Coverage Results" MODIFIED="1519636386727" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test_framework/src/test/case" />
-    <SUITE FILE_PATH="coverage/Hypweb_Frame$Unittests_in_test_001_login_py.coverage" NAME="Unittests in test_001_login.py Coverage Results" MODIFIED="1525664667312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test_framework/src/test/case" />
+    <SUITE FILE_PATH="coverage/Hypweb_Frame$Unittests_in_test_001_login_py.coverage" NAME="Unittests in test_001_login.py Coverage Results" MODIFIED="1525774174325" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test_framework/src/test/case" />
     <SUITE FILE_PATH="coverage/Hypweb_Frame$Unittests_for_test_001_login_Test_test_search.coverage" NAME="Unittests for test_001_login.Test.test_search Coverage Results" MODIFIED="1520586918116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test_framework/src/test/case" />
     <SUITE FILE_PATH="coverage/Hypweb_Frame$Unittests_in_test_002__member_py.coverage" NAME="Unittests in test_002_ member.py Coverage Results" MODIFIED="1524211986918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test_framework/src/test/case" />
     <SUITE FILE_PATH="coverage/Hypweb_Frame$Unittests_in_test_login_py.coverage" NAME="Unittests in test_login.py Coverage Results" MODIFIED="1519978012695" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test_framework/src/test/case" />
@@ -37,10 +42,10 @@
     <SUITE FILE_PATH="coverage/Hypweb_Frame$Unittests_for_test_001_login_TestBaiDu.coverage" NAME="Unittests for test_001_login.TestBaiDu Coverage Results" MODIFIED="1520585590119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test_framework/src/test/case" />
     <SUITE FILE_PATH="coverage/Hypweb_Frame$Unittests_for_test_001_login_Test.coverage" NAME="Unittests for test_001_login.Test Coverage Results" MODIFIED="1520585726071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test_framework/src/test/case" />
     <SUITE FILE_PATH="coverage/Hypweb_Frame$Unittests_in_HTMLTestRunner_py.coverage" NAME="Unittests in HTMLTestRunner.py Coverage Results" MODIFIED="1520588762779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test_framework/src/utils" />
-    <SUITE FILE_PATH="coverage/Hypweb_Frame$login.coverage" NAME="login Coverage Results" MODIFIED="1524736014808" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test_framework/src/utils" />
+    <SUITE FILE_PATH="coverage/Hypweb_Frame$login.coverage" NAME="login Coverage Results" MODIFIED="1525774787888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test_framework/src/utils" />
     <SUITE FILE_PATH="coverage/Hypweb_Frame$ExCell.coverage" NAME="ExCell Coverage Results" MODIFIED="1519458774151" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test_framework/src/utils" />
     <SUITE FILE_PATH="coverage/Hypweb_Frame$Unittests_for_test_login_TestBaiDu.coverage" NAME="Unittests for test_login.TestBaiDu Coverage Results" MODIFIED="1519974443837" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test_framework/src/test/case" />
-    <SUITE FILE_PATH="coverage/Hypweb_Frame$runtest.coverage" NAME="runtest Coverage Results" MODIFIED="1524215233865" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test_framework" />
+    <SUITE FILE_PATH="coverage/Hypweb_Frame$runtest.coverage" NAME="runtest Coverage Results" MODIFIED="1525768551634" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test_framework" />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="Hypweb.Frame" />
@@ -50,19 +55,31 @@
       <file leaf-file-name="runtest.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Test_framework/runtest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+            <state relative-caret-position="201">
+              <caret line="20" selection-start-line="20" selection-end-line="20" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_001_login.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test_001_login.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Test_framework/src/test/case/test_001_login.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="50" column="26" lean-forward="true" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
+            <state relative-caret-position="204">
+              <caret line="27" column="36" lean-forward="true" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="36" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Test_framework/src/utils/login.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+              <folding>
+                <element signature="e#7#18#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -71,22 +88,10 @@
       <file leaf-file-name="test_002_member.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Test_framework/src/test/case/test_002_member.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="37" column="26" lean-forward="true" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
+            <state relative-caret-position="132">
+              <caret line="18" column="27" lean-forward="true" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Test_framework/src/utils/config.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="17" column="89" selection-start-line="17" selection-start-column="89" selection-end-line="17" selection-end-column="89" />
-              <folding>
-                <element signature="e#72#81#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -95,34 +100,10 @@
       <file leaf-file-name="test_003_order.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Test_framework/src/test/case/test_003_order.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-110">
-              <caret line="25" column="19" lean-forward="true" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+            <state relative-caret-position="396">
+              <caret line="30" column="45" lean-forward="true" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Test_framework/src/utils/login.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" column="11" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="11" />
-              <folding>
-                <element signature="e#7#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="log.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Test_framework/src/utils/log.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1034">
-              <caret line="50" selection-start-line="50" selection-end-line="50" />
-              <folding>
-                <element signature="e#115#124#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -131,8 +112,8 @@
       <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Test_framework/config/config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+            <state relative-caret-position="-858">
+              <caret column="31" selection-start-column="5" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -158,18 +139,18 @@
         <option value="$PROJECT_DIR$/Test_framework/src/utils/HTMLTestRunner.py" />
         <option value="$PROJECT_DIR$/Test_framework/src/utils/ExCell.py" />
         <option value="$PROJECT_DIR$/Test_framework/src/utils/file_reader.py" />
-        <option value="$PROJECT_DIR$/Test_framework/src/utils/config.py" />
         <option value="$PROJECT_DIR$/Test_framework/src/test/case/test_002_login.py" />
         <option value="$PROJECT_DIR$/Test_framework/src/utils/driver.py" />
         <option value="$PROJECT_DIR$/Test_framework/src/test/case/test_002_ member.py" />
-        <option value="$PROJECT_DIR$/Test_framework/runtest.py" />
         <option value="$PROJECT_DIR$/Test_framework/src/utils/log.py" />
         <option value="$PROJECT_DIR$/Test_framework/src/test/case/test_003_purchase.py" />
+        <option value="$PROJECT_DIR$/Test_framework/src/utils/config.py" />
+        <option value="$PROJECT_DIR$/Test_framework/runtest.py" />
         <option value="$PROJECT_DIR$/Test_framework/config/config.yml" />
-        <option value="$PROJECT_DIR$/Test_framework/src/utils/login.py" />
-        <option value="$PROJECT_DIR$/Test_framework/src/test/case/test_003_order.py" />
         <option value="$PROJECT_DIR$/Test_framework/src/test/case/test_002_member.py" />
+        <option value="$PROJECT_DIR$/Test_framework/src/test/case/test_003_order.py" />
         <option value="$PROJECT_DIR$/Test_framework/src/test/case/test_001_login.py" />
+        <option value="$PROJECT_DIR$/Test_framework/src/utils/login.py" />
       </list>
     </option>
   </component>
@@ -205,6 +186,12 @@
               <item name="Hypweb.Frame" type="b2602c69:ProjectViewProjectNode" />
               <item name="Hypweb.Frame" type="462c0819:PsiDirectoryNode" />
               <item name="Test_framework" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Hypweb.Frame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Hypweb.Frame" type="462c0819:PsiDirectoryNode" />
+              <item name="Test_framework" type="462c0819:PsiDirectoryNode" />
+              <item name="log" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Hypweb.Frame" type="b2602c69:ProjectViewProjectNode" />
@@ -268,7 +255,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in test_001_login.py">
+  <component name="RunManager" selected="Python.login">
     <configuration name="login" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Hypweb.Frame" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -503,9 +490,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.login" />
         <item itemvalue="Python tests.Unittests in test_001_login.py" />
         <item itemvalue="Python tests.Unittests in test_002_member.py" />
-        <item itemvalue="Python.login" />
         <item itemvalue="Python.runtest" />
         <item itemvalue="Python tests.Unittests in HTMLTestRunner.py" />
       </list>
@@ -525,39 +512,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_test_001_login_py - 2018.05.03 at 11h 29m 59s.xml">
+    <history-entry file="Unittests_in_test_001_login_py - 2018.05.08 at 17h 39m 46s.xml">
       <configuration name="Unittests in test_001_login.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_001_login_py - 2018.05.03 at 14h 10m 55s.xml">
+    <history-entry file="Unittests_in_test_001_login_py - 2018.05.08 at 17h 41m 48s.xml">
       <configuration name="Unittests in test_001_login.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_001_login_py - 2018.05.03 at 14h 12m 09s.xml">
+    <history-entry file="Unittests_in_test_001_login_py - 2018.05.08 at 17h 44m 50s.xml">
       <configuration name="Unittests in test_001_login.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_001_login_py - 2018.05.03 at 14h 13m 07s.xml">
+    <history-entry file="Unittests_in_test_001_login_py - 2018.05.08 at 17h 52m 01s.xml">
       <configuration name="Unittests in test_001_login.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_001_login_py - 2018.05.03 at 14h 43m 20s.xml">
+    <history-entry file="Unittests_in_test_001_login_py - 2018.05.08 at 17h 52m 53s.xml">
       <configuration name="Unittests in test_001_login.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_001_login_py - 2018.05.03 at 14h 45m 09s.xml">
+    <history-entry file="Unittests_in_test_001_login_py - 2018.05.08 at 17h 54m 00s.xml">
       <configuration name="Unittests in test_001_login.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_001_login_py - 2018.05.03 at 15h 02m 52s.xml">
+    <history-entry file="Unittests_in_test_002_member_py - 2018.05.08 at 17h 56m 18s.xml">
+      <configuration name="Unittests in test_002_member.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_002_member_py - 2018.05.08 at 17h 59m 26s.xml">
+      <configuration name="Unittests in test_002_member.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_001_login_py - 2018.05.08 at 18h 06m 28s.xml">
       <configuration name="Unittests in test_001_login.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_001_login_py - 2018.05.07 at 11h 07m 50s.xml">
-      <configuration name="Unittests in test_001_login.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_001_login_py - 2018.05.07 at 11h 09m 05s.xml">
-      <configuration name="Unittests in test_001_login.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_001_login_py - 2018.05.07 at 11h 40m 51s.xml">
+    <history-entry file="Unittests_in_test_001_login_py - 2018.05.08 at 18h 09m 34s.xml">
       <configuration name="Unittests in test_001_login.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -565,9 +552,9 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946353" weight="0.3982103" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946353" visible="true" weight="0.25391498" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49916527" visible="true" weight="0.30954936" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49916527" visible="true" weight="0.3138412" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -587,22 +574,22 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.33279914" />
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33913043" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" id="Data View" order="4" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Python Console" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="9" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -617,61 +604,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Test_framework/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test_framework/src/test/case/test_001_login.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1276">
-          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test_framework/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="4" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test_framework/src/test/case/test_001_login.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1056">
-          <caret line="56" column="21" lean-forward="true" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test_framework/src/utils/log.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test_framework/src/test/case/test_002_member.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test_framework/src/utils/HTMLTestRunner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18678">
-          <caret line="854" column="82" selection-start-line="854" selection-start-column="82" selection-end-line="854" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Test_framework/src/utils/config.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -819,13 +751,6 @@
     <entry file="file://$PROJECT_DIR$/Test_framework/src/utils/HTMLTestRunner3.py" />
     <entry file="file://$PROJECT_DIR$/Test_framework/src/utils/driver.py" />
     <entry file="file://$USER_HOME$/Documents/Tencent Files/540489703/FileRecv/downloadgirl_mm.py（下载妹子图片的爬虫-详解）.py" />
-    <entry file="file://$PROJECT_DIR$/Test_framework/src/utils/file_reader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="93" column="26" selection-start-line="93" selection-start-column="26" selection-end-line="93" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python36/Lib/site-packages/selenium/webdriver/remote/webdriver.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
@@ -847,13 +772,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test_framework/src/utils/HTMLTestRunner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18678">
-          <caret line="854" column="82" selection-start-line="854" selection-start-column="82" selection-end-line="854" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python36/Lib/unittest/case.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="589">
@@ -865,16 +783,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="572">
           <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test_framework/src/utils/log.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1034">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
-          <folding>
-            <element signature="e#115#124#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -892,54 +800,89 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test_framework/runtest.py">
+    <entry file="file://$PROJECT_DIR$/Test_framework/src/utils/log.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test_framework/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test_framework/src/utils/login.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="11" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="11" />
+        <state relative-caret-position="1100">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
           <folding>
-            <element signature="e#7#18#0" expanded="true" />
+            <element signature="e#115#124#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test_framework/src/test/case/test_003_order.py">
+    <entry file="file://$PROJECT_DIR$/Test_framework/src/utils/HTMLTestRunner.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-110">
-          <caret line="25" column="19" lean-forward="true" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="601">
+          <caret line="854" column="82" selection-start-line="854" selection-start-column="82" selection-end-line="854" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test_framework/src/utils/file_reader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2002">
+          <caret line="93" column="26" selection-start-line="93" selection-start-column="26" selection-end-line="93" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Test_framework/src/utils/config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="89" selection-start-line="17" selection-start-column="89" selection-end-line="17" selection-end-column="89" />
+        <state relative-caret-position="267">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
           <folding>
             <element signature="e#72#81#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Test_framework/log/log2018.05.08.15.52.46.test_002_member.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test_framework/log/log2018.05.08.15.50.03.test_001_login.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test_framework/log/log2018.05.08.16.01.00.test_002_member.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test_framework/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-858">
+          <caret column="31" selection-start-column="5" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test_framework/log/log2018.05.08.16.02.57.test_002_member.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test_framework/log/log2018.05.08.16.17.32.test_001_login.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test_framework/log/log2018.05.08.15.59.04.test_002_member.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test_framework/log/test.log.2018-05-07">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test_framework/runtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="20" selection-start-line="20" selection-end-line="20" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test_framework/src/test/case/test_003_order.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="30" column="45" lean-forward="true" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Test_framework/src/test/case/test_002_member.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="37" column="26" lean-forward="true" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
+        <state relative-caret-position="132">
+          <caret line="18" column="27" lean-forward="true" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
@@ -948,10 +891,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Test_framework/src/test/case/test_001_login.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="50" column="26" lean-forward="true" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
+        <state relative-caret-position="204">
+          <caret line="27" column="36" lean-forward="true" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="36" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test_framework/src/utils/login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="e#7#18#0" expanded="true" />
           </folding>
         </state>
       </provider>

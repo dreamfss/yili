@@ -20,15 +20,17 @@ class Test_Order(unittest.TestCase):
 
     def sub_setUp(self):
         # 调用登录模块中driver
-        self.driver = LoGin().driver
+        self.driver = LoGin.sub_setup(self.driver)
 
     def sub_tearDown(self):
         # 关闭游览器、命令框
-        self.driver.quit()
+        self.driver.close()
 
     def test_search(self):
         try:
             self.sub_setUp()  # 调用sub_setUp方法
+            LoGin().test_search()
+            time.sleep(2)
             self.driver.find_element(*self.search).clear()  # 清空搜索栏
             self.driver.find_element(*self.search).send_keys(Test_Order.search_goods)
             time.sleep(3)

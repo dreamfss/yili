@@ -17,18 +17,20 @@ class Test_Login(unittest.TestCase):
     phone = (By.XPATH, Config().get('phone'))  # 用户名输入框
     Username = (By.ID, Config().get('Username'))  # 登录后，用户名
     password = (By.XPATH, Config().get('password'))  # 密码输入框
-    login_button = (By.XPATH, Config().get('login_button'))  # 登录页（已登录），登录按钮
+    login_button = (By.XPATH, Config().get('login_button'))  # 登录页，登录按钮
     quit_button = (By.XPATH, Config().get('quit'))  # 首页，退出按钮
+    login_account = (By.XPATH, Config().get('login_account'))  #未输入账号，提示信息
+    login_password = (By.XPATH, Config().get('login_password'))  #未输入密码，提示信息
     Information = (By.XPATH, Config().get('Information'))  #登录失败，页面提示信息
 
     def sub_setUp(self):
         # 调用登录模块中driver
-        self.driver = LoGin().driver
+        self.driver = LoGin('driver')
+        # LoGin.sub_setup(self.driver)
 
     def sub_tearDown(self):
         # 关闭游览器、命令框
         self.driver.close()
-        self.driver.quit()
 
     def test_search(self):
         try:
@@ -36,28 +38,28 @@ class Test_Login(unittest.TestCase):
             self.driver.find_element(*self.locator_button).click()  # 点击首页登录按钮
             datas = ExcelReader(self.excel).data  # 获取excell表格中字符串
             # 循环导入username、password
-            for d in datas:
+            for index, d in enumerate(datas):
                 time.sleep(3)
                 self.driver.find_element(*self.phone).clear()  # 清空用户名输入框
                 self.driver.find_element(*self.password).clear()  # 清空密码输入框
                 self.driver.find_element(*self.phone).send_keys(d['username'])  # 输入用户名（读取表格）
                 self.driver.find_element(*self.password).send_keys(d['password'])  # 输入密码（读取表格）
                 self.driver.find_element(*self.login_button).click()  # 登录页，点击登录按钮
-                print(2)
-                time.sleep(2)
-                print(len(d['username']))
-                print(len(d['password']))
-                print(d)
-                print(3.1)
-                time.sleep(1000)
-                #  意思就是在10秒内等待某个按钮被定位到。每隔0.5秒内调用一下until里面的表达式或者方法函数，
-                # 要么10秒内表达式执行成功，要么10秒后抛出超时异常
-                WebDriverWait(self.driver, 10).until(lambda driver:
-                                                     self.driver.find_element(*self.Information))
+                if index == 0:
+                    #  意思就是在10秒内等待某个按钮被定位到。每隔0.5秒内调用一下until里面的表达式或者方法函数，
+                    # 要么10秒内表达式执行成功，要么10秒后抛出超时异常
+                    WebDriverWait(self.driver, 10).until(lambda driver:
+                                                         self.driver.find_element(*self.login_account))
+                elif index == 1:
+                    WebDriverWait(self.driver, 10).until(lambda driver:
+                                                         self.driver.find_element(*self.login_password))
+                elif index == (2, 3):
+                    WebDriverWait(self.driver, 10).until(lambda driver:
+                                                         self.driver.find_element(*self.Information))
                 #  判断元素是否消失，是返回Ture,否返回False
-                is_disappeared = WebDriverWait(self.driver, 30, 1,).\
-                    until_not(lambda driver: self.driver.find_element(*self.Information).is_displayed())
-                print(is_disappeared)
+                # is_disappeared = WebDriverWait(self.driver, 30, 1,).\
+                #     until_not(lambda driver: self.driver.find_element(*self.Information).is_displayed())
+                # print(is_disappeared)
             links = self.driver.find_element(*self.Username).text  # 通过ID，获得用户名
             if links == Config().get('links'):  # 验证获得的用户名与配置文件中是否一致
                 self.driver.find_element(*self.quit_button).click()  # 首页（已登录），退出按钮

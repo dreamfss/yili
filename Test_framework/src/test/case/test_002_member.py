@@ -12,15 +12,18 @@ class Test_Member(unittest.TestCase):
 
     def sub_setUp(self):
         # 调用登录模块中driver
-        self.driver = LoGin().driver
+        self.driver = LoGin.sub_setup(self.driver)
+        print("这段有输出")
 
     def sub_tearDown(self):
-        self.driver.quit()
+        self.driver.close()
 
     def test_search(self):
         try:
-            self.sub_setUp()
+            self.sub_setUp()  # 调用sub_setUp方法
+            print(10)
             LoGin().test_search()
+            time.sleep(2)
             self.driver.find_element(*self.member_centre).click()
             test = self.driver.find_element(*self.prompt).text
             links = test[3:7]
