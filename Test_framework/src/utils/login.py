@@ -8,7 +8,7 @@ from Test_framework.src.utils.config import Config, DRIVER_PATH, DATA_PATH
 from Test_framework.src.utils.file_reader import ExcelReader
 
 
-class LoGin:
+class LoGin(object):
     URL = Config().get('URL')
     excel = DATA_PATH + '\TestLogin.xlsx'
     locator_button = (By.XPATH, Config().get('loginxpath'))
@@ -23,18 +23,24 @@ class LoGin:
     # driver.maximize_window()
     # driver.get(URL)
 
-    # def __init__(self, driver):
-    #     self.driver = driver
+    def __init__(self, driver):
+        self.driver = driver
 
-    def test_sup(DRIVER):
-        self.driver = LoGin('driver')
-        P = self.driver.driver
-        driver = webdriver.Chrome(executable_path=DRIVER_PATH + '\chromedriver.exe')
-        driver.maximize_window()
-        driver.get(LoGin.URL)
+    # @classmethod
+    # def sub_setUp(cls):
+    #     cls.driver = driver
+        # cls.driver.maximize_window()
+        # cls.driver.get(LoGin.URL)
+    #     # P = self.driver.driver
+    #     # self.driver = webdriver.Chrome(executable_path=DRIVER_PATH + '\chromedriver.exe')
+    #     self.driver.maximize_window()
+    #     self.driver.get(LoGin.URL)
+    #     print(1)
+    #
+    # def sub_teardown(self):
+    #     self.driver.close()
 
     def test_search(self):
-        # self.driver = webdriver.Chrome(executable_path=DRIVER_PATH + '\chromedriver.exe')
         # self.driver.maximize_window()
         # self.driver.get(LoGin.URL)
         datas = ExcelReader(self.excel).data
@@ -46,3 +52,7 @@ class LoGin:
         self.driver.find_element(*self.password).send_keys(datas[LoGin.digital]['password'])
         self.driver.find_element(*self.login_button).click()
         print(2)
+
+
+if __name__ == '__main__':
+    unittest.main()

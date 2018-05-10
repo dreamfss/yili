@@ -1,6 +1,6 @@
 import time
 import unittest
-# from selenium import webdriver
+from selenium import webdriver
 from selenium.webdriver.common.by import By
 from Test_framework.src.utils.config import Config, DRIVER_PATH, DATA_PATH
 from Test_framework.src.utils.login import LoGin
@@ -18,18 +18,22 @@ class Test_Order(unittest.TestCase):
     search_goods = Config().get('search_goods')  # 搜索商品
     search = (By.XPATH, Config().get('search'))  # 搜索栏
 
-    def sub_setUp(self):
+    @classmethod
+    def sub_setUp(cls):
         # 调用登录模块中driver
-        self.driver = LoGin.sub_setup(self.driver)
+        cls.driver = webdriver.Chrome(executable_path=DRIVER_PATH + '\chromedriver.exe')
+        cls.driver.maximize_window()
+        cls.driver.get(LoGin.URL)
 
     def sub_tearDown(self):
         # 关闭游览器、命令框
-        self.driver.close()
+        self.driver.quit()
 
     def test_search(self):
         try:
             self.sub_setUp()  # 调用sub_setUp方法
-            LoGin().test_search()
+            p = LoGin(self.driver)
+            p.test_search()
             time.sleep(2)
             self.driver.find_element(*self.search).clear()  # 清空搜索栏
             self.driver.find_element(*self.search).send_keys(Test_Order.search_goods)

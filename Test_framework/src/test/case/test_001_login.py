@@ -1,6 +1,6 @@
 import time
 import unittest
-# from selenium import webdriver
+from selenium import webdriver
 from selenium.webdriver.common.by import By
 from Test_framework.src.utils.config import Config, DRIVER_PATH, DATA_PATH
 from Test_framework.src.utils.login import LoGin
@@ -23,18 +23,26 @@ class Test_Login(unittest.TestCase):
     login_password = (By.XPATH, Config().get('login_password'))  #未输入密码，提示信息
     Information = (By.XPATH, Config().get('Information'))  #登录失败，页面提示信息
 
-    def sub_setUp(self):
+    @classmethod
+    def sub_setUp(cls):
         # 调用登录模块中driver
-        self.driver = LoGin('driver')
+        cls.driver = webdriver.Chrome(executable_path=DRIVER_PATH + '\chromedriver.exe')
+        cls.driver.maximize_window()
+        cls.driver.get(LoGin.URL)
+        print(1)
+        # self.driver = p
         # LoGin.sub_setup(self.driver)
 
     def sub_tearDown(self):
         # 关闭游览器、命令框
-        self.driver.close()
+        print(2)
+        self.driver.quit()
 
     def test_search(self):
         try:
             self.sub_setUp()  # 调用sub_setUp方法
+            # self.driver.maximize_window()
+            # self.driver.get(Test_Login.URL)
             self.driver.find_element(*self.locator_button).click()  # 点击首页登录按钮
             datas = ExcelReader(self.excel).data  # 获取excell表格中字符串
             # 循环导入username、password
@@ -56,20 +64,25 @@ class Test_Login(unittest.TestCase):
                 elif index == (2, 3):
                     WebDriverWait(self.driver, 10).until(lambda driver:
                                                          self.driver.find_element(*self.Information))
+                # elif index == (2, 3):
+                #     WebDriverWait(self.driver, 10).until(lambda driver:
+                #                                          self.driver.find_element(*self.Username))
                 #  判断元素是否消失，是返回Ture,否返回False
                 # is_disappeared = WebDriverWait(self.driver, 30, 1,).\
                 #     until_not(lambda driver: self.driver.find_element(*self.Information).is_displayed())
                 # print(is_disappeared)
+            WebDriverWait(self.driver, 10).until(lambda driver:
+                                                 self.driver.find_element(*self.Username))
             links = self.driver.find_element(*self.Username).text  # 通过ID，获得用户名
             if links == Config().get('links'):  # 验证获得的用户名与配置文件中是否一致
                 self.driver.find_element(*self.quit_button).click()  # 首页（已登录），退出按钮
                 logger.info('登录成功')  # 登录成功日志
                 self.sub_tearDown()  # 调用退出方法
-        except Exception:
+        except Exception as msg:
             # 代码执行错误时，打印图片
             nowTime = time.strftime("%Y.%m.%d.%H.%M.%S") + ".test_001_login"  # 图片名称格式
             self.driver.get_screenshot_as_file(
-                "D:\\TestCase\\Hypweb.Frame\\Test_framework\\log\\log%s.png" % nowTime)  # 截屏图片
+                "D:\\TestCase\\Hypweb.Frame\\Test_framework\\log\\%r,%r.png") % (nowTime, msg)  # 截屏图片
             # logger.warnning('登录失败')  # 登录失败日志
             logger.info('测试用例：test_001,页面元素未找到')
             self.sub_tearDown()  # 调用退出方法

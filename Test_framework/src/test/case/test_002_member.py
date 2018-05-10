@@ -1,7 +1,9 @@
 import time
 import unittest
+from selenium import webdriver
 from Test_framework.src.utils.login import LoGin
 from selenium.webdriver.common.by import By
+from Test_framework.src.utils.config import Config, DRIVER_PATH, DATA_PATH
 from Test_framework.src.utils.config import Config
 from Test_framework.src.utils.log import logger
 
@@ -9,20 +11,27 @@ from Test_framework.src.utils.log import logger
 class Test_Member(unittest.TestCase):
     member_centre = (By.XPATH, Config().get('member_centre'))
     prompt = (By.XPATH, Config().get('prompt'))
+    # driver = webdriver.Chrome(executable_path=DRIVER_PATH + '\chromedriver.exe')
 
-    def sub_setUp(self):
+    @classmethod
+    def sub_setUp(cls):
         # 调用登录模块中driver
-        self.driver = LoGin.sub_setup(self.driver)
+        cls.driver = webdriver.Chrome(executable_path=DRIVER_PATH + '\chromedriver.exe')
+        cls.driver.maximize_window()
+        cls.driver.get(LoGin.URL)
         print("这段有输出")
 
     def sub_tearDown(self):
-        self.driver.close()
+        self.driver.quit()
 
     def test_search(self):
         try:
             self.sub_setUp()  # 调用sub_setUp方法
+            p = LoGin(self.driver)
+            p.test_search()
             print(10)
-            LoGin().test_search()
+            # LoGin()
+            # print(11)
             time.sleep(2)
             self.driver.find_element(*self.member_centre).click()
             test = self.driver.find_element(*self.prompt).text
