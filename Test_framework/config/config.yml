@@ -66,4 +66,16 @@ prompt: //*[@id="main"]/div/div[2]/div[2]/div[1]/div[1]/div[1]
 search: //*[@id="search-key-word"]
 
 #搜索商品
-search_goods: 亚瑟王
+search_goods: 亚瑟士
+
+#搜索页，加入购物车
+add_shop_cat: //*[@id="main"]/div/div[2]/div[2]/div[3]/ul/li[1]/div/div[1]/div
+
+#搜索按钮
+search_button: //*[@id="goods_search"]/a
+
+#商品购买数量
+purchase_quantity: //*[@id="items_action_form"]/div/div[2]/div[2]/div[1]/input
+
+#增加数量箭头
+increase: //*[@id="items_action_form"]/div/div[2]/div[2]/div[1]/a[1]

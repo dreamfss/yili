@@ -9,7 +9,7 @@ from Test_framework.src.utils.HTMLTestRunner import HTMLTestRunner
 # from Test_framework import runtest
 
 
-def rentest():
+def all_case():
     testunit = unittest.TestSuite()
     # -case_dir:这个是待执行用例的目录。
     # -pattern：这个是匹配脚本名称的规则，test*.py意思是匹配test开头的所有脚本。
@@ -21,7 +21,7 @@ def rentest():
         for test_case in test_suite:
             testunit.addTest(test_case)
     return testunit
-alltestnames = rentest()
+# alltestnames = rentest()
 
 if __name__ == '__main__':
     # 执行用例
@@ -31,9 +31,9 @@ if __name__ == '__main__':
         filename = REPORT_PATH + '\\report.html'
         with open(filename, 'wb') as f:
             runner = HTMLTestRunner(f, verbosity=2, title='测试报告', description='修改html报告')
-            runner.run(alltestnames)
+            runner.run(all_case())
     except Exception as msg:
-        # 打印图片
+        # 打印日志
         nowTime = time.strftime("%Y%m%d.%H.%M.%S") + ".test"
         logger.exception("%s" % msg)
         # test_suite.get_screenshot_as_file("D:\\TestCase\\Hypweb.Frame\\Test_framework\\log\\log%s.png" % nowTime)

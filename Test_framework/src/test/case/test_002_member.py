@@ -1,3 +1,4 @@
+# coding = utf-8
 import time
 import unittest
 from selenium import webdriver
@@ -40,11 +41,13 @@ class Test_Member(unittest.TestCase):
             if links == Config().get('links'):
                 self.sub_tearDown()
                 logger.info('会员中心登录成功')
-        except Exception:
+        except Exception as msg:
             # 代码执行错误时，打印图片
-            nowtime = time.strftime("%Y.%m.%d.%H.%M.%S")+".test_002_member"
-            self.driver.get_screenshot_as_file("D:\\TestCase\\Hypweb.Frame\\Test_framework\\log\\log%s.png" % nowtime)
-            self.driver.quit()
+            nowTime = time.strftime("%Y.%m.%d.%H.%M.%S") + ".test_001_member"  # 图片名称格式
+            self.driver.get_screenshot_as_file(
+                "D:\\TestCase\\Hypweb.Frame\\Test_framework\\log\\%s.png") % nowTime  # 截屏图片
+            logger.info("test_001_login.%s") % msg
+            self.sub_tearDown()  # 调用退出方法
 
 
 if __name__ == '__main__':

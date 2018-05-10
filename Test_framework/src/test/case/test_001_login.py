@@ -1,3 +1,4 @@
+# coding = utf-8
 import time
 import unittest
 from selenium import webdriver
@@ -82,9 +83,8 @@ class Test_Login(unittest.TestCase):
             # 代码执行错误时，打印图片
             nowTime = time.strftime("%Y.%m.%d.%H.%M.%S") + ".test_001_login"  # 图片名称格式
             self.driver.get_screenshot_as_file(
-                "D:\\TestCase\\Hypweb.Frame\\Test_framework\\log\\%r,%r.png") % (nowTime, msg)  # 截屏图片
-            # logger.warnning('登录失败')  # 登录失败日志
-            logger.info('测试用例：test_001,页面元素未找到')
+                "D:\\TestCase\\Hypweb.Frame\\Test_framework\\log\\%s.png") % nowTime  # 截屏图片
+            logger.info("test_001_login.%s") % msg
             self.sub_tearDown()  # 调用退出方法
 
 
