@@ -8,6 +8,7 @@ from Test_framework.src.utils.login import LoGin
 from Test_framework.src.utils.log import logger
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support.ui import WebDriverWait
+import random
 # from Test_framework.src.utils.login import login
 # from Test_framework.src.utils.file_reader import ExcelReader
 # from Test_framework.src.utils.HTMLTestRunner import HTMLTestRunner
@@ -20,6 +21,7 @@ class Test_Order(unittest.TestCase):
     add_shop_cat = (By.XPATH, Config().get('add_shop_cat'))  #加入购物车
     search_button = (By.XPATH, Config().get('search_button'))  #搜索按钮
     purchase_quantity = (By.XPATH, Config().get('purchase_quantity'))  #购买数量
+    increase = (By.XPATH, Config().get('increase')) #数量箭头
 
     @classmethod
     def sub_setUp(cls):
@@ -45,8 +47,16 @@ class Test_Order(unittest.TestCase):
                                                  self.driver.find_element(*self.add_shop_cat))
             above = self.driver.find_element(*self.add_shop_cat)  #定位加入购物车元素位置
             ActionChains(self.driver).move_to_element(above).click().perform()  #待元素显示，点击元素
+            WebDriverWait(self.driver, 10).until(lambda driver:  # 查询加入购物车按钮
+                                                 self.driver.find_element(*self.purchase_quantity))
             p = self.driver.find_element(*self.purchase_quantity)
             value = p.get_attribute("value")
+
+
+
+
+
+
             print(value)
             time.sleep(3)
             logger.info('搜索成功')  # 登录成功日志
@@ -58,8 +68,8 @@ class Test_Order(unittest.TestCase):
             p = self.driver.get_screenshot_as_file("D:\\TestCase\\Hypweb.Frame\\Test_framework\\log\\1.png")
             print(type(p))
             self.driver.get_screenshot_as_file(
-                "D:\\TestCase\\Hypweb.Frame\\Test_framework\\log\\%s.png") % nowTime  # 截屏图片
-            logger.info("test_001_login.%s") % msg
+                "D:\\TestCase\\Hypweb.Frame\\Test_framework\\log\\%s.png" % nowTime)  # 截屏图片
+            logger.info("test_001_login.%s" % msg)
             self.sub_tearDown()  # 调用退出方法
 
 
