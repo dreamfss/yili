@@ -11,7 +11,6 @@ from Test_framework.src.utils.file_reader import ExcelReader
 class LoGin(object):
     URL = Config().get('URL')
     excel = DATA_PATH + '\TestLogin.xlsx'
-    locator_button = (By.XPATH, Config().get('loginxpath'))
     phone = (By.XPATH, Config().get('phone'))
     Username = (By.ID, Config().get('Username'))
     password = (By.XPATH, Config().get('password'))
@@ -19,12 +18,12 @@ class LoGin(object):
     login_button = (By.XPATH, Config().get('login_button'))  # 登录页，登录按钮
     quit = (By.XPATH, Config().get('quit'))
     digital = Config().get('digital')
-    # driver = webdriver.Chrome(executable_path=DRIVER_PATH + '\chromedriver.exe')
-    # driver.maximize_window()
-    # driver.get(URL)
+    driver = webdriver.Chrome(executable_path=DRIVER_PATH + '\chromedriver.exe')
+    driver.maximize_window()
+    driver.get(URL)
 
-    def __init__(self, driver):
-        self.driver = driver
+    # def __init__(self, driver):
+    #     self.driver = driver
 
     # @classmethod
     # def sub_setUp(cls):
@@ -44,7 +43,6 @@ class LoGin(object):
         # self.driver.maximize_window()
         # self.driver.get(LoGin.URL)
         datas = ExcelReader(self.excel).data
-        self.driver.find_element(*self.locator_button).click()
         time.sleep(3)
         self.driver.find_element(*self.phone).clear()
         self.driver.find_element(*self.phone).send_keys(datas[LoGin.digital]['username'])
@@ -52,6 +50,8 @@ class LoGin(object):
         self.driver.find_element(*self.password).send_keys(datas[LoGin.digital]['password'])
         self.driver.find_element(*self.login_button).click()
         print(2)
+        handles = self.driver.window_handles.pop()
+        print(handles)
 
 
 if __name__ == '__main__':

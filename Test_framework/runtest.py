@@ -14,7 +14,7 @@ def all_case():
     # -case_dir:这个是待执行用例的目录。
     # -pattern：这个是匹配脚本名称的规则，test*.py意思是匹配test开头的所有脚本。
     # -top_level_dir：这个是顶层目录的名称，一般默认等于None就行了。
-    test_dir = 'D:\\TestCase\\Hypweb.Frame\\Test_framework\\src\\test\\case'
+    test_dir = 'D:\\TestCase\\Hypweb.Yili\\Test_framework\\src\\test\\case'
     suite = unittest.defaultTestLoader.discover(test_dir, pattern='test*.py', top_level_dir=None)
     # 循环test_dir = 指定目录下，所有脚本命名格式为:pattern = test*.py 的脚本
     for test_suite in suite:

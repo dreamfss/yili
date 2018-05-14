@@ -45,7 +45,7 @@ class Test_Member(unittest.TestCase):
             # 代码执行错误时，打印图片
             nowTime = time.strftime("%Y.%m.%d.%H.%M.%S") + ".test_001_member"  # 图片名称格式
             self.driver.get_screenshot_as_file(
-                "D:\\TestCase\\Hypweb.Frame\\Test_framework\\log\\%s.png" % nowTime)  # 截屏图片
+                "D:\\TestCase\\Hypweb.Yili\\Test_framework\\log\\%s.png" % nowTime)  # 截屏图片
             logger.info("test_001_login.%s" % msg)
             self.sub_tearDown()  # 调用退出方法
 

@@ -1,4 +1,4 @@
-URL: http://bbc.wanxiaohong.cn/
+URL: http://erp.demo.com
 
 log:
     file_name: test.log
@@ -7,20 +7,17 @@ log:
     file_level: DEBUG
     pattern: '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 
-#登录按钮
-loginxpath: //*[@id="login_50"]/a[2]
-
 #登录手机号
-phone: /html/body/div[2]/div/div[2]/form/div[3]/ul/li[1]/span/input
+phone: //*[@id="uname"]
 
 #登录密码
-password: /html/body/div[2]/div/div[2]/form/div[3]/ul/li[2]/span/input
+password: //*[@id="password"]
 
 #登录页登录按钮
-login_button: /html/body/div[2]/div/div[2]/form/div[3]/ul/li[4]/button/span/span
+login_button: //*[@id="btn-login"]
 
 #登录信息表格行数
-digital: 4
+digital: 0
 
 #请填写登录账号
 login_account: /html/body/div[2]/div/div[2]/form/div[3]/ul/li[1]/span[2]
