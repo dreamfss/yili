@@ -22,7 +22,6 @@ DRIVER_PATH = os.path.join(BASE_PATH, 'drivers')
 LOG_PATH = os.path.join(BASE_PATH, 'log')
 REPORT_PATH = os.path.join(BASE_PATH, 'report')
 
-
 class Config:
     def __init__(self, config=CONFIG_FILE):
         self.config = YamlReader(config).data

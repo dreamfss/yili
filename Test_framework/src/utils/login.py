@@ -16,15 +16,14 @@ class LoGin(object):
     password = (By.XPATH, Config().get('password'))
     # login_button = (By.XPATH, Config().get('login_button'))
     login_button = (By.XPATH, Config().get('login_button'))  # 登录页，登录按钮
-    quit = (By.XPATH, Config().get('quit'))
+    # quit = (By.XPATH, Config().get('quit'))
     digital = Config().get('digital')
-    driver = webdriver.Chrome(executable_path=DRIVER_PATH + '\chromedriver.exe')
-    driver.maximize_window()
-    driver.get(URL)
+    # driver = webdriver.Chrome(executable_path=DRIVER_PATH + '\chromedriver.exe')
+    # driver.maximize_window()
+    # driver.get(URL)
 
-    # def __init__(self, driver):
-    #     self.driver = driver
-
+    def __init__(self, driver):
+        self.driver = driver
     # @classmethod
     # def sub_setUp(cls):
     #     cls.driver = driver
@@ -44,14 +43,13 @@ class LoGin(object):
         # self.driver.get(LoGin.URL)
         datas = ExcelReader(self.excel).data
         time.sleep(3)
-        self.driver.find_element(*self.phone).clear()
-        self.driver.find_element(*self.phone).send_keys(datas[LoGin.digital]['username'])
-        self.driver.find_element(*self.password).clear()
-        self.driver.find_element(*self.password).send_keys(datas[LoGin.digital]['password'])
-        self.driver.find_element(*self.login_button).click()
-        print(2)
-        handles = self.driver.window_handles.pop()
-        print(handles)
+        self.driver.find_element(*self.phone).clear()  # 清空用户名输入框
+        self.driver.find_element(*self.password).clear()  # 清空密码输入框
+        self.driver.find_element(*self.phone).send_keys(
+            datas[LoGin.digital]['username'])  # 输入用户名（读取表格）
+        self.driver.find_element(*self.password).send_keys(
+            datas[LoGin.digital]['password'])  # 输入密码（读取表格）
+        self.driver.find_element(*self.login_button).click()  # 登录页，点击登录按钮
 
 
 if __name__ == '__main__':

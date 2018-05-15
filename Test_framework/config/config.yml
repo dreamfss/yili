@@ -19,60 +19,17 @@ login_button: //*[@id="btn-login"]
 #登录信息表格行数
 digital: 0
 
-#请填写登录账号
-login_account: /html/body/div[2]/div/div[2]/form/div[3]/ul/li[1]/span[2]
-
-#请填写登录密码
-login_password: /html/body/div[2]/div/div[2]/form/div[3]/ul/li[2]/span[2]
-
 #用户名ID
-Username: uname_50
-#//*[@id="uname_67"]
+Username: //*[@id="topbar"]/div[2]/div[2]
 
-#用户名
-links: kong
+#订单
+ordr: //*[@id="header"]/div[2]/div/dl[1]
 
-#退出按钮
-quit: //*[@id="member_50"]/a
+#新建订单
+new_order: //*[@id="side"]/div/div/div[6]/div[2]/ul/li/a
 
-#我的富连网
-membership: //*[@id="topbar"]/div/div[2]/div[2]/a
-
-#列表
-label: //*[@id="topbar"]/div/div[2]/div[2]/div/ul/li
-
-#我的富连网标签
-tagName: a
-
-#登录失败，页面提示信息
-Information: //*[@id="pop_message_error"]/div/div
-
-#返回首页
-home: //*[@id="header"]/div/div[2]/div[1]/a[2]
-
-#选中元素
-active: active
-
-#会员中心
-member_centre: //*[@id="topbar"]/div/div[2]/div/a[1]
-
-#提示信息
-prompt: //*[@id="main"]/div/div[2]/div[2]/div[1]/div[1]/div[1]
-
-#搜索栏
-search: //*[@id="search-key-word"]
-
-#搜索商品
-search_goods: 亚瑟士
-
-#搜索页，加入购物车
-add_shop_cat: //*[@id="main"]/div/div[2]/div[2]/div[3]/ul/li[1]/div/div[1]/div
+#用户名搜索框
+user_search: //*[@id="ipt_data"]
 
 #搜索按钮
-search_button: //*[@id="goods_search"]/a
-
-#商品购买数量
-purchase_quantity: //*[@id="items_action_form"]/div/div[2]/div[2]/div[1]/input
-
-#增加数量箭头
-increase: //*[@id="items_action_form"]/div/div[2]/div[2]/div[1]/a[1]
+serarch_user: //*[@id="btn_search_member"]/span/span
